@@ -10,6 +10,10 @@ This example prints "Hello World" and a counter value via the standard output wh
  - [Microsoft Visual Studio Code](https://code.visualstudio.com/download) with Keil Studio Pack extension (optional, alternatively CLI can be used)
  - [Arm Compiler 6](https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded) (automatically installed when using Visual Studio Code with vcpkg)
 
+### DAPLink FW
+
+To be recognized correctly by the Device Manager extension in VS Code, you need to replace the original LPC-Link2 firmware with a DAPLink firmware. Please follow the instructions on [Updating LPCXpresso firmware](https://os.mbed.com/teams/NXP/wiki/Updating-LPCXpresso-firmware).
+
 ## Build Solution/Project
 
 ### Using Visual Studio Code with extensions
