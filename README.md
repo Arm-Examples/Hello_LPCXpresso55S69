@@ -1,4 +1,4 @@
-# Hello example for IMXRT1050-EVKB
+# Hello example for LPCXpresso55S69
 
 Simple Hello World example for NXP [LPCXpresso55S69](https://www.nxp.com/design/software/development-software/mcuxpresso-software-and-tools-/lpcxpresso-boards/lpcxpresso55s69-development-board:LPC55S69-EVK) Development Board.
 This example prints "Hello World" and a counter value via the standard output which is routed to the debug console through Virtual COM port.
