@@ -3,6 +3,8 @@
 Simple Hello World example for NXP [LPCXpresso55S69](https://www.nxp.com/design/software/development-software/mcuxpresso-software-and-tools-/lpcxpresso-boards/lpcxpresso55s69-development-board:LPC55S69-EVK) Development Board.
 This example prints "Hello World" and a counter value via the standard output which is routed to the debug console through Virtual COM port.
 
+[![Keil Studio Cloud - Import Project](https://img.shields.io/badge/Keil_Studio_Cloud-Import_Project-0091bd?logo=arm&logoColor=0091bd)](https://studio.keil.arm.com/?import=https://github.com/Arm-Examples/Hello_LPCXpresso55S69.git)
+
 ## Prerequisites
 
 ### Tools:
