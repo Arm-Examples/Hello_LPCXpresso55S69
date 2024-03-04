@@ -1,0 +1,12 @@
+{
+    "cmsis-csolution.actions": [
+        {
+            "path": "hello.csolution.yml",
+            "target": "LPCXpresso55S69",
+            "config": {
+                "run": "arm-debugger.flash: Flash Device",
+                "debug": "Arm Debugger"
+            }
+        }
+    ]
+}
