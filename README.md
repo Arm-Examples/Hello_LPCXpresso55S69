@@ -1,3 +1,5 @@
+![example workflow](https://github.com/Arm-Examples/Hello_LPCXpresso55S69/actions/workflows/ci.yml/badge.svg)
+
 # Hello example for LPCXpresso55S69
 
 Simple Hello World example for NXP [LPCXpresso55S69](https://www.nxp.com/design/software/development-software/mcuxpresso-software-and-tools-/lpcxpresso-boards/lpcxpresso55s69-development-board:LPC55S69-EVK) Development Board.
