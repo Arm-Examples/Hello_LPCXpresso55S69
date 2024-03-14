@@ -17,12 +17,12 @@ on:
     branches: [ main ]
 
 jobs:
-  publish-project-action-test:
-    name: Publish Action Test
+  publish-project-action:
+    name: Publish Action
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: Arm-Examples/pubish-cmsis-example@latest
+      - uses: Arm-Examples/publish-cmsis-example@latest
         name: Publish Project Action
         with:
           branch: ${{ github.branch || github.ref }}
