@@ -1,4 +1,4 @@
-![example workflow](https://github.com/Arm-Examples/Hello_LPCXpresso55S69/actions/workflows/ci.yml/badge.svg)
+[![example workflow](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_LPCXpresso55S69/ci.yml?logo=arm&logoColor=0091bd&label=published)](https://www.keil.arm.com/)
 
 # Hello example for LPCXpresso55S69
 
