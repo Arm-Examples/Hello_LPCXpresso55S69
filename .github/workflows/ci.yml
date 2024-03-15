@@ -27,5 +27,5 @@ jobs:
         with:
           branch: ${{ github.branch || github.ref }}
           project-file: ./hello.csolution.yml
-          dry-run: ${{ github.ref == 'refs/pull/2/merge' }}
+          dry-run: ${{ github.ref != 'refs/heads/main' }}
           API_TOKEN: ${{ secrets.KEIL_API_TOKEN }}
