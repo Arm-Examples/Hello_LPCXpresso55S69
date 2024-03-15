@@ -22,11 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo ${{ github.ref }}
       - uses: Arm-Examples/publish-cmsis-example@latest
         name: Publish Project Action
         with:
           branch: ${{ github.branch || github.ref }}
           project-file: ./hello.csolution.yml
-          dry-run: ${{ github.ref != 'refs/heads/main' }}
+          dry-run: ${{ github.ref == 'refs/pull/2/merge' }}
           API_TOKEN: ${{ secrets.KEIL_API_TOKEN }}
