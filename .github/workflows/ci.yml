@@ -22,6 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: echo ${{ github.ref_name }}
       - uses: Arm-Examples/publish-cmsis-example@latest
         name: Publish Project Action
         with:
