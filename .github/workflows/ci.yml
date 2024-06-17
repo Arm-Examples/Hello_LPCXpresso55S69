@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: Arm-Examples/verify-cmsis-example-action@latest
-        name: Verify
+        name: Verify CMSIS Compliance
         with:
           branch: ${{ github.ref }}
           project-file: ./hello.csolution.yml
