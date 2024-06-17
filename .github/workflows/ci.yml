@@ -1,0 +1,20 @@
+name: Verify CMSIS Compliance
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-cmsis-compliance:
+    name: Verify CMSIS Compliance
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Arm-Examples/verify-cmsis-example-action@latest
+        name: Verify
+        with:
+          branch: ${{ github.ref }}
+          project-file: ./hello.csolution.yml
+          API_TOKEN: ${{ secrets.KEIL_API_TOKEN }}
