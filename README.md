@@ -9,10 +9,11 @@ This example prints "Hello World" and a counter value via the standard output wh
 
 ## Prerequisites
 
-### Tools:
- - [CMSIS-Toolbox v2.0.0](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/releases) or newer
- - [Microsoft Visual Studio Code](https://code.visualstudio.com/download) with Keil Studio Pack extension (optional, alternatively CLI can be used)
- - [Arm Compiler 6](https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded) (automatically installed when using Visual Studio Code with vcpkg)
+### Tools
+
+- [CMSIS-Toolbox v2.0.0](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/releases) or newer
+- [Microsoft Visual Studio Code](https://code.visualstudio.com/download) with Keil Studio Pack extension (optional, alternatively CLI can be used)
+- [Arm Compiler 6](https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded) (automatically installed when using Visual Studio Code with vcpkg)
 
 ### DAPLink FW
 
@@ -31,12 +32,15 @@ Open the 'CMSIS' view from the side bar, select desired 'Build Type' and press t
 ### Using Command Line Interface (CLI)
 
 Download required packs (not required when the packs are already available) by executing the following commands:
-   ```sh
-   csolution list packs -s hello.csolution.yml -m >packs.txt
-   cpackget update-index
-   cpackget add -f packs.txt
-   ```
+
+```sh
+csolution list packs -s hello.csolution.yml -m >packs.txt
+cpackget update-index
+cpackget add -f packs.txt
+```
+
 Build the project by executing the following command:
+
 ```sh
 cbuild hello.csolution.yml
 ```
