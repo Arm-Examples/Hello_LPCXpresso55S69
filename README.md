@@ -7,7 +7,6 @@ This example prints "Hello World" and a counter value via the standard output wh
 [![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_LPCXpresso55S69/validate.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis) 
 [![example workflow](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_LPCXpresso55S69/ci.yml?logo=arm&logoColor=0091bd&label=Example%20Published)](https://www.keil.arm.com/)
 
-
 ## Prerequisites
 
 ### Tools:
@@ -46,20 +45,18 @@ cbuild hello.csolution.yml
 
 ### Using Visual Studio Code with extensions
 
- - Connect the board's DAPLink USB to the PC (provides also power).
- - Open the 'CMSIS' view from the side bar:
-   - Press the 'Run' button and wait until the image is programmed and starts running.
-   - Press the 'Open Serial' button and select the board's serial port with 115200 baud rate.
- - Observe the terminal output.
-
- ### Using external programmer and terminal
-
- - Connect the board's DAPLink USB to the PC (provides also power).
- - Program the image (.axf) using an external programmer.
- - Open terminal on the PC and connect to the board's serial port with 115200 baud rate.
- - Observe the terminal output.
+- Connect the board's DAPLink USB to the PC (provides also power).
+- Open the 'Device Manager' view from the side bar:
+  - Make sure your board is detected (the view should show 'LPCXpresso55S69').
+  - Press the 'Open Serial' button next to the board name and select a baud rate of 115200.
+- Open the 'CMSIS' view from the side bar:
+  - Press the 'Run' button and wait until the image is programmed and starts running.
+- Observe the terminal output.
 
 ## Debug the application
+
+Before starting to debug the application, make sure that you have gone through the steps as described in the
+[run the application](#run-the-application) section.
 
 ### Using Visual Studio Code with extensions
 
