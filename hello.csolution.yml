@@ -1,6 +1,6 @@
 solution:
   description: Simple Hello World example for LPCXpresso55S69
-  created-for: CMSIS-Toolbox@2.6.1
+  created-for: CMSIS-Toolbox@2.4.0
   compiler: AC6
   cdefault: ./cdefault.yml
 
