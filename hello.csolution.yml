@@ -1,7 +1,8 @@
 solution:
   description: Simple Hello World example for LPCXpresso55S69
-  created-for: CMSIS-Toolbox@2.0.0
+  created-for: CMSIS-Toolbox@2.6.1
   compiler: AC6
+  cdefault: ./cdefault.yml
 
   packs:
     - pack: ARM::CMSIS
@@ -16,9 +17,6 @@ solution:
       device: LPC55S69JBD100:cm33_core0
       processor:
         trustzone: off
-      misc:
-        - Link:
-            - --diag_suppress 6314
 
   build-types:
     - type: Debug
