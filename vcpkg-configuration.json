@@ -1,9 +1,9 @@
 {
   "registries": [
     {
+      "name": "arm",
       "kind": "artifact",
-      "location": "https://artifacts.tools.arm.com/vcpkg-ce-registry/registry.zip",
-      "name": "arm"
+      "location": "https://artifacts.tools.arm.com/vcpkg-registry"
     }
   ],
   "requires": {
