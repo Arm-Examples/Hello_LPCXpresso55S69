@@ -43,7 +43,3 @@ project:
     - component: Device:SDK Utilities:serial_manager_uart
 
     - component: Board Support:SDK Project Template:project_template&lpcxpresso55s69
-
-  packs:
-    - pack: ARM::CMSIS-Compiler@2.1.0
-    - pack: ARM::CMSIS@6.1.0
