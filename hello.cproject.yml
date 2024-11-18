@@ -1,26 +1,14 @@
+# A project translates into one executable or library.
 project:
 
-  groups:
-    - group: Documentation
-      files:
-        - file: README.md
-    - group: Application
-      files:
-        - file: hello.c
-    - group: Board
-      files:
-        - file: main.c
-        - file: retarget_stdio.c
-
-  linker:
-    - script: RTE/Device/LPC55S69JBD100_cm33_core0/LPC55S69_cm33_core0_flash.scf
-
+  # List components to use for your application.
+  # A software component is a re-usable unit that may be configurable.
   components:
     - component: CMSIS:CORE
     - component: CMSIS:OS Tick:SysTick
     - component: CMSIS-Compiler:CORE
     - component: CMSIS-Compiler:STDOUT:Custom
-    - component: CMSIS:RTOS2:Keil RTX5&Source@5.8.0
+    - component: CMSIS:RTOS2:Keil RTX5&Source
 
     - component: Device:Startup
     - component: Device:CMSIS:LPC55S69_system
@@ -43,3 +31,20 @@ project:
     - component: Device:SDK Utilities:serial_manager_uart
 
     - component: Board Support:SDK Project Template:project_template&lpcxpresso55s69
+
+  # List of source groups and files added to a project or a layer.
+  groups:
+    - group: Documentation
+      files:
+        - file: README.md
+    - group: Application
+      files:
+        - file: hello.c
+    - group: Board
+      files:
+        - file: main.c
+        - file: retarget_stdio.c
+
+  linker:
+    - script: RTE/Device/LPC55S69JBD100_cm33_core0/LPC55S69_cm33_core0_flash.scf
+      for-compiler: AC6
