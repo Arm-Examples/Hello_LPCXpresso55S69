@@ -31,6 +31,8 @@ project:
     - component: Device:SDK Utilities:serial_manager_uart
 
     - component: Board Support:SDK Project Template:project_template&lpcxpresso55s69
+    - component: NXP::Device:CMSIS:LPC55S69_header
+    - component: NXP::Device:SDK Utilities:str
 
   # List of source groups and files added to a project or a layer.
   groups:
@@ -51,6 +53,12 @@ project:
 
   output:
     type:
-    - elf
-    - hex
-    - map
+      - elf
+      - hex
+      - map
+  packs:
+    - pack: ARM::CMSIS
+    - pack: ARM::CMSIS-Compiler
+    - pack: ARM::CMSIS-RTX
+    - pack: NXP::LPC55S69_DFP
+    - pack: NXP::LPCXpresso55S69_BSP
