@@ -1,13 +1,18 @@
 # A solution is a collection of related projects that share same base configuration.
 solution:
   description: Simple Hello World example for LPCXpresso55S69
-  created-for: CMSIS-Toolbox@2.10.0
+  created-for: CMSIS-Toolbox@2.12.0
   cdefault:
 
   # List of tested compilers that can be selected
   select-compiler:
     - compiler: AC6
   compiler: AC6
+
+  # Project define
+  define:
+    - OS_IDLE_THREAD_NAME: \"Idle\"
+    - OS_TIMER_THREAD_NAME: \"Timer\"
 
   # List the packs that define the device and/or board.
   packs:
@@ -27,7 +32,7 @@ solution:
       target-set:
         - set:
           debugger:
-            name: CMSIS-DAP
+            name: CMSIS-DAP@pyOCD
           images:
             - project-context: hello.Debug
 
