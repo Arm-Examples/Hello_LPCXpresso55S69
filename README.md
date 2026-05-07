@@ -1,19 +1,19 @@
-[![License](https://img.shields.io/github/license/Arm-Examples/Hello_LPCXpresso55S69?label)](https://github.com/Arm-Examples/Hello_LPCXpresso55S69/blob/main/LICENSE)
-[![Build and Execution Test](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_LPCXpresso55S69/build.yml?logo=arm&logoColor=0091bd&label=Build%20and%20Execution%20Test)](https://github.com/Arm-Examples/Hello_LPCXpresso55S69/tree/main/.github/workflows/build.yml)
+[![License Apache--2.0](https://img.shields.io/badge/License-Apache--2.0-green?label=License)](https://github.com/Arm-Examples/Hello_LPCXpresso55S69/blob/main/LICENSE)
+[![Build and Execution Test](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_LPCXpresso55S69/build.yml?logo=arm&logoColor=0091bd&label=Build%20and%20Execution%20Test)](./.github/workflows/build.yml)
+[![Example workflow](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_LPCXpresso55S69/ci.yml?logo=arm&logoColor=0091bd&label=Example%20Published)](https://www.keil.arm.com/)
+[![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_LPCXpresso55S69/validate.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis) 
 
 # Hello example for LPCXpresso55S69
 
 Simple Hello World example for NXP [LPCXpresso55S69](https://www.nxp.com/design/software/development-software/mcuxpresso-software-and-tools-/lpcxpresso-boards/lpcxpresso55s69-development-board:LPC55S69-EVK) Development Board.
 This example prints "Hello World" and a counter value via the standard output which is routed to the debug console through Virtual COM port.
 
-[![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_LPCXpresso55S69/validate.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis) 
-[![example workflow](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_LPCXpresso55S69/ci.yml?logo=arm&logoColor=0091bd&label=Example%20Published)](https://www.keil.arm.com/)
 
 ## Prerequisites
 
 The following tools need to be installed on your machine:
 
-- [CMSIS-Toolbox v2.12.0](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/releases) or newer.
+- [CMSIS-Toolbox v2.13.0](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/releases) or newer.
 - [Arm Compiler for Embedded](https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded)
   (automatically installed via vcpkg when using Visual Studio Code).
 - [Microsoft Visual Studio Code](https://code.visualstudio.com/download) with Keil Studio Pack extension.
